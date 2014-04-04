@@ -588,10 +588,13 @@ section#portfolio {
 	position:relative;
 	z-index:1;
 }
-#contact h4 {
-	margin-bottom:18px;
-	color:#fff;
+.hi {
+	font-size: 30px;
 }
+
+#flright {
+    float: right;
+  }
 .contact_info {padding-right:20px;
 }
 .contact_info a {color:#fff;
@@ -627,7 +630,6 @@ textarea {
 	overflow:hidden;
 	resize: none;
 	margin-bottom:18px;
-	margin-left:20px;
 	width:366px;
 }
 textarea,
@@ -941,7 +943,7 @@ input[type="color"]:focus {
 	
 	#ajax-contact-form .fleft {width:310px;}
 	
-	#contact textarea, #contact input[type="text"] {width:272px;}
+	#contact textarea, #contact input[type="text"] {width:100%;}
 
 
 	
