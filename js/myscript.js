@@ -29,18 +29,18 @@ function calculateScroll() {
 
 jQuery(document).ready(function() {
 	//Menu Sidebar
-	setTimeout(function() {
-		$('#sidebar').animate({left: '-92px'}, 800);
-	}, 3500);
+	// setTimeout(function() {
+	// 	$('#sidebar').animate({left: '-92px'}, 800);
+	// }, 3500);
 	
-	jQuery('.sidebar_btn').click(function(){
-		var sidebar = $('#sidebar');
-		if (sidebar.css('left') === '-92px') {
-			$('#sidebar').animate({left: '0px'});
-		} else {
-			$('#sidebar').animate({left: '-92px'});
-		}		
-	});
+	// jQuery('.sidebar_btn').click(function(){
+	// 	var sidebar = $('#sidebar');
+	// 	if (sidebar.css('left') === '-92px') {
+	// 		$('#sidebar').animate({left: '0px'});
+	// 	} else {
+	// 		$('#sidebar').animate({left: '-92px'});
+	// 	}		
+	// });
 	
 	//MobileMenu
 	jQuery('#top header .container').append('<a href="javascript:void(0)" class="menu_toggler"/>');
