@@ -159,7 +159,7 @@ h4 {
 
 .call_to_btn {
 	display:inline-block;
-	margin:0;
+	margin:30px;
 	padding:13px 50px 12px;
 	text-transform:uppercase;
 	line-height:20px;
@@ -168,10 +168,20 @@ h4 {
 	border: 0;
 	cursor:pointer;
 	background-color: rgba(89,179,144,0.3);
+	border: 2px solid #1abc9c;
 }
 .call_to_btn:hover {
 	background-color: #1abc9c;
 	color:#fff;
+	border: 2px solid white;
+}
+
+.homelink {
+	color: white !important;
+}
+
+.homelink:hover {
+	color: grey !important;
 }
 
 /* ____________________ Header ____________________ */
@@ -275,6 +285,12 @@ section#sidebar {overflow:visible;
 	font-size:20px;
 }
 
+#subtitle {
+	font-size: 15px;
+	letter-spacing: 2px;
+	margin:0 0 20px;
+	padding:0;
+}
 
 /* ___________________ //Home ___________________ */
 
@@ -876,7 +892,7 @@ input[type="color"]:focus {
 
 /* __________ Menu __________ */
 	
-	.navmenu ul li a {padding: 0 8px;}
+	.navmenu ul li a {padding: 0 0px;}
 /* _________ //Menu _________ */
 
 /* __________ Home __________ */
@@ -884,6 +900,8 @@ input[type="color"]:focus {
 	#home .welcome_block h1 {font-size:44px; line-height:44px;}
 	#home .welcome_block p {font-size:15px; line-height:15px;}
 	#home .welcome_block span {font-size:12px; line-height:17px;}
+
+	.homelink:hover {color: white !important;}
 	
 /* _________ //Home _________ */
 
