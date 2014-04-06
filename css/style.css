@@ -461,7 +461,7 @@ section#portfolio {
 /* ____________________ resume ____________________ */
 #resume {
 	position:relative;
-	padding:200px 0;
+	padding:250px 0;
 	background-image: url(../images/computer_bg.jpg);
 	background-position: 0px -75px;
 }
@@ -595,7 +595,7 @@ section#portfolio {
 	overflow:hidden;
 	position:relative;
 	min-height:400px;
-	background-image: url(../images/contact_bg.jpg);
+	background-image: url(../images/nyc_buildings.jpg);
 	background-size:cover;
 	background-attachment: fixed;
 	color:#fff;
@@ -607,14 +607,21 @@ section#portfolio {
 	top:0;
 	width:100%;
 	height:100%;
-	background:url(../images/contact_fill.png);
+	/*background:url(../images/contact_fill.png);*/
 }
 #contact .container {
 	position:relative;
 	z-index:1;
 }
 .hi {
-	font-size: 30px;
+	font-size: 30px !important;
+	padding-bottom: 40px;
+	text-transform: none;
+	background-color: #1abc9c;
+	padding: 17px;
+	display: inline-block;
+	border: solid white 10px;
+	margin-bottom: 20px;
 }
 
 #flright {
@@ -646,16 +653,15 @@ input[type="text"] {
 	font-style:normal;
 	border-radius: 0;	
 	background: #f3f3f3;
-	background: rgba(243,243,243,0.2);
 	border: 0;
 	box-shadow: none;	  
 }
 textarea {
-	min-height:174px;
-	overflow:hidden;
+	min-height: 17em;
+	overflow: hidden;
 	resize: none;
-	margin-bottom:18px;
-	width:366px;
+	margin-bottom: 18px;
+	width: 42%;
 }
 textarea,
 input[type="text"].last {margin-right:0;
@@ -684,7 +690,7 @@ input[type="color"]:focus {
 	width:100%;
 	display:block;
 	cursor:pointer;
-	margin:0 0 45px;
+	/*margin:0 0 45px;*/
 	padding:13px 30px;
 	border: 0;
 	border-radius: 0;
@@ -699,12 +705,13 @@ input[type="color"]:focus {
 	font-size:15px;
 	color:#59b390;
 	background: #f3f3f3;
-	background: rgba(255,255,255,0.36);
+	/*background: rgba(255,255,255,0.36);*/
 	transition: all 0.3s ease-in-out;
 	-webkit-transition: all 0.3s ease-in-out;
 }
 .contact_btn:hover {
-	background: rgba(255,255,255,0.45);
+	/*background: rgba(255,255,255,0.45);*/
+	background-color: grey;
 	color:#59b390;
 }
 
@@ -938,8 +945,8 @@ input[type="color"]:focus {
 	#resume .resume_block {padding:0;}
 	
 	#ajax-contact-form .fleft {width:470px;}
-	input[type="text"] {width:92%;}
-	#contact textarea {margin-left:0; width:432px;}
+	input[type="text"] {width:100%;}
+	#contact textarea {margin-left:0; width:100%;}
 
 
 	.row {margin-left:0;}
