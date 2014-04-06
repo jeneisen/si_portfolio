@@ -83,6 +83,11 @@ h1 {
 	font-size:82px;
 	color:#fff;
 }
+
+/*#myname {
+	font-family: 'Homemade Apple', 'Droid Sans', Helvetica, Arial, sans-serif !important; 
+}*/
+
 h2 {
 	margin:0 0 44px;
 	padding:0;
@@ -424,33 +429,38 @@ section#portfolio {
 .element {
 	display:inline-block;
 	margin: 25px;
-	border: solid white 10px;
+	border: solid black 10px;
 	padding:3em 3em 3em;
-	text-transform:uppercase;
-	letter-spacing: 2px;
 	line-height:20px;
 	font-size:25px;
-	font-weight: 700;
-	color:#fff;
 	cursor:pointer;
-	background-color: #1abc9c;
+
 }
 
-#pr_one {
-	background-image: url();
+#pr_one{
+	background-image: url(../images/landing_pg.png);
+	background-size:cover;	
 }
 
 #pr_two {
-	background-image: url();
+	background-image: url(../images/gem.jpg);
+	background-size:cover;	
 }
 
 #pr_three {
-	background-image: url();
+	background-image: url(../images/beetle_arduino.png);
+	background-size:cover;	
 }
 
 #pr_four{
-	background-image: url();
+	background-image: url(../images/code.png);
+	background-size:cover;	
 }
+
+.description {
+	display: inline-block;
+}
+
 
 /* __________ Filter __________ */
 #filter {
@@ -748,8 +758,8 @@ input[type="color"]:focus {
 }
 .contact_btn:hover {
 	/*background: rgba(255,255,255,0.45);*/
-	background-color: grey;
-	color:#59b390;
+	background-color: #59b390;
+	color:#ffffff;
 }
 
 .notification_error {
