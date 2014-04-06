@@ -235,7 +235,6 @@ section#sidebar {overflow:visible;
 .navmenu li.active a 
 {
 	color:#1abc9c;
-	text-decoration: underline;
 }
 .navmenu li a span {
 	display:block;
@@ -415,6 +414,44 @@ section#portfolio {
 	width:100%;
 }
 
+.project {
+	display: inline-block;
+	padding-right: 8em;
+	text-align: center;
+	padding-left: 8em;
+}
+
+.element {
+	display:inline-block;
+	margin: 25px;
+	border: solid white 10px;
+	padding:3em 3em 3em;
+	text-transform:uppercase;
+	letter-spacing: 2px;
+	line-height:20px;
+	font-size:25px;
+	font-weight: 700;
+	color:#fff;
+	cursor:pointer;
+	background-color: #1abc9c;
+}
+
+#pr_one {
+	background-image: url();
+}
+
+#pr_two {
+	background-image: url();
+}
+
+#pr_three {
+	background-image: url();
+}
+
+#pr_four{
+	background-image: url();
+}
+
 /* __________ Filter __________ */
 #filter {
 	padding:7px 0 13px;
@@ -461,7 +498,7 @@ section#portfolio {
 /* ____________________ resume ____________________ */
 #resume {
 	position:relative;
-	padding:250px 0;
+	padding:300px 0;
 	background-image: url(../images/computer_bg.jpg);
 	background-position: 0px -75px;
 }
