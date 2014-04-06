@@ -738,6 +738,36 @@ input[type="color"]:focus {
 	filter: alpha(opacity=100);
 }
 
+.social_btns {
+	font-size: 40px;
+	padding-bottom: 50px;
+}
+
+.social_btns a {
+	color: #ffffff !important;
+}
+
+.ss-twitter:hover {
+	color: #5EAADE !important;
+}
+
+.ss-octocat:hover {
+	color: #000000 !important;
+}
+
+.ss-linkedin:hover {
+	color: #0274B3 !important;
+}
+
+.ss-quora:hover {
+	color: #A82300 !important;
+}
+
+.ss-foursquare:hover {
+	color: #26B3EE !important;
+}
+
+
 .copyright {
 	position:absolute;
 	bottom:0;
