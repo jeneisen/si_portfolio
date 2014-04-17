@@ -181,15 +181,3 @@ function contactHeight(){
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-

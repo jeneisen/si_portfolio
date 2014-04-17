@@ -310,6 +310,16 @@ section#sidebar {overflow:visible;
 	background-color: #bababa;
 }
 
+/*.abouttext {
+	padding-left: 14em;
+	padding-right: 14em;
+	text-align: justify;
+}*/
+
+.abouttext {
+	text-align: justify;
+}
+
 .about_slide .slide1 h3 {width:85%;
 }
 .about_slide .slide1 p {width:95%;
@@ -1035,6 +1045,21 @@ input[type="color"]:focus {
 	/*.navmenu ul li a {padding:0 4px; font-size:10px; text-align:center;}*/
 
 /* __________ About __________ */
+
+.call_to_btn {
+	display:inline-block;
+	margin:1em;
+	padding:1.25em 1.25em 1.25em;
+	text-transform:uppercase;
+	line-height:3px;
+	font-size:12px;
+	color:#fff;
+	border: 0;
+	cursor:pointer;
+	background-color: rgba(89,179,144,0.3);
+	border: 2px solid #1abc9c;
+}
+
 	
 /* _________ //About _________ */
 
