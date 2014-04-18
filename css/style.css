@@ -189,22 +189,11 @@ h4 {
 	color: grey !important;
 }
 
-/* ____________________ Header ____________________ */
-.sidebar_btn {
-	cursor:pointer;
-	display:block;
-	z-index:2000;
-	position:fixed;
-	top: 30px;
-	right: 30px;
-	width:32px;
-	height:34px;
-	background-image: url(../images/sidebar_btn.png);
-	background-repeat: no-repeat;
+/*Header*/
+
+section#nav_bar {overflow:visible;
 }
-section#sidebar {overflow:visible;
-}
-#sidebar{
+#nav_bar{
 	position:fixed;
 	z-index:999;
 	left:0;
@@ -217,9 +206,9 @@ section#sidebar {overflow:visible;
 	background: #333;
 	background: rgba(0,0,0,0.15);
 }
-#sidebar .container {position:relative;
+#nav_bar .container {position:relative;
 }
-/* __________ Menu _________ */
+/*Menu*/
 .navmenu{
 	padding:25px 0 21px;
 	text-align:center;
@@ -237,7 +226,7 @@ section#sidebar {overflow:visible;
 	-webkit-transition: none;
 }
 .navmenu li a:hover,
-.navmenu li.active a 
+.navmenu li.active 
 {
 	color:#1abc9c;
 }
@@ -255,9 +244,8 @@ section#sidebar {overflow:visible;
 	background-position:0 -30px;
 }
 
-/* ___________________ //Header ___________________ */
 
-/* ____________________ Home ____________________ */
+/*Home (first section)*/
 #home {
 	overflow:hidden;
 	position:relative;
@@ -296,10 +284,9 @@ section#sidebar {overflow:visible;
 	padding:0;
 }
 
-/* ___________________ //Home ___________________ */
 
 
-/* ____________________ About ____________________ */
+/*About section*/
 .about_btn {
 	margin-top:4px;
 	padding:11px 27px;
@@ -310,11 +297,6 @@ section#sidebar {overflow:visible;
 	background-color: #bababa;
 }
 
-/*.abouttext {
-	padding-left: 14em;
-	padding-right: 14em;
-	text-align: justify;
-}*/
 
 .abouttext {
 	text-align: justify;
@@ -373,10 +355,9 @@ section#sidebar {overflow:visible;
 	-webkit-transform: scale(1);
 }
 
-/* ___________________ //About ___________________ */
 
 
-/* ____________________ Testimonials ____________________ */
+/*Twitter section*/
 #testimonials {
 	position:relative;
 	padding:150px 0 116px;
@@ -420,23 +401,24 @@ section#sidebar {overflow:visible;
 	color:#59b390;
 }
 
-/* ___________________ //Testimonials ___________________ */
 
 
-/* ____________________ Portfolio ____________________ */
+/*Portfolio (sample work)*/
+
 section#portfolio {
 	overflow:visible !important;
 	width:100%;
 }
 
-.project {
+/*.project {
 	display: inline-block;
 	padding-right: 8em;
 	text-align: center;
 	padding-left: 8em;
-}
+}*/
 
-.element {
+
+/*.element {
 	display:inline-block;
 	margin: 25px;
 	border: solid black 10px;
@@ -444,69 +426,91 @@ section#portfolio {
 	line-height:20px;
 	font-size:10px;
 	cursor:pointer;
-}
-
-#pr_one{
-	background-image: url(../images/landing_pg.png);
-	background-size:cover;	
-}
-
-#pr_two {
-	background-image: url(../images/gem.jpg);
-	background-size:cover;	
-}
-
-#pr_three {
-	background-image: url(../images/beetle_arduino.png);
-	background-size:cover;	
-}
-
-#pr_four{
-	background-image: url(../images/code.png);
-	background-size:cover;	
-}
-
-.description {
-	display: inline-block;
-}
-
-
-
-/* __________ Filter __________ */
-#filter {
-	padding:7px 0 13px;
-	margin-bottom:37px;
-}
-#filter li {display:inline-block;
-}
-#filter a {
-	display:block;
-	margin:0 0 0 40px;
-	padding:0;
-	text-transform:uppercase;
-	line-height:20px;
-	color:#797979;
-	cursor:pointer;
-}
-#filter a.selected,
-#filter a:hover {
-	color:#59b390;
-}
-
-/* _________ //Filter _________ */
-
-/* __________ Portfolio Item __________ */
-/*.portfolio_block {
-	overflow:visible !important;
-	margin: 0;
 }*/
 
-/* _________ //Portfolio Item _________ */
+.portfolio_block .element {
+	float:left;
+	width:25%;
+	margin:0;
+	z-index:100;
+	padding: 1em;
+}
 
-/* ___________________ //Portfolio ___________________ */
+.portfolio_item {
+	background-image: url(../images/landing_pg.png);
+	background-size:cover;
+}
+.portfolio_item .hover_img {
+	background-color:#000;
+	height: 15em;
+	width: 100%;
+}
+.portfolio_item .hover_img img {
+	transition: all 0.3s ease-in-out;
+	-webkit-transition: all 0.3s ease-in-out;
+	width:100%;
+	height:100%;
+}
+.portfolio_item:hover .hover_img img {
+	opacity:0.25;
+	filter: alpha(opacity=35);
+}
+
+.portfolio_item:hover .hover_img video {
+	opacity:0.25;
+	filter: alpha(opacity=35);
+}
+
+.portfolio_item {position:relative;
+}
+.portfolio_item:before {
+	content:'';
+	position:absolute;
+	z-index:100;
+	left:0;
+	top:0;
+	/*width:100%;
+	height:100%;*/
+	transition: all 0.3s ease-in-out;
+	-webkit-transition: all 0.3s ease-in-out;
+}
+.portfolio_item:hover:before {
+	box-shadow: 0 0 46px rgba(0,0,0,0.28) inset;
+}
+
+.proj_descr {
+	position:absolute;
+	z-index:110;
+	left:10%;
+	top:50%;
+	right:10%;
+	text-align:center;
+	color:#fff;
+	opacity:0;
+	filter: alpha(opacity=0);
+	transform: translate(0, -50%);
+	-ms-transform: translate(0, -50%);
+	-webkit-transform: translate(0, -50%);
+	transition: all 0.3s ease-in-out;
+	-webkit-transition: all 0.3s ease-in-out;
+}
+.proj_descr a {
+	display: block;
+	margin-bottom: 1em;
+	text-transform: uppercase;
+	font-size: 2em;
+	color: #59b390;
+	line-height: 1em;
+	font-weight: bold;
+}
+.portfolio_item:hover .proj_descr {
+	opacity:1;
+	filter: alpha(opacity=100);
+}
 
 
-/* ____________________ resume ____________________ */
+
+/*Resume Section*/
 #resume {
 	position:relative;
 	padding:300px 0;
@@ -527,14 +531,6 @@ section#portfolio {
 	z-index:1;
 	text-align:center;
 }
-/*#resume .resume_block {
-	padding:0 60px;
-	text-transform:uppercase;
-	font-weight:500;
-	line-height:24px;
-	font-size:19px;
-	color:#fff;
-}*/
 
 .resume_btn {
 	display:inline-block;
@@ -559,83 +555,6 @@ section#portfolio {
 }
 
 
-/* ___________________ //resume ___________________ */
-
-
-/* ____________________ Blog ____________________ */
-.blog_img {
-	position:relative;
-	background:#59b390;
-	transition: all 0.3s ease-in-out;
-	-webkit-transition: all 0.3s ease-in-out;
-}
-.blog_item:hover .blog_img {background:#000;
-}
-.blog_item .blog_img img {
-	width:100%;
-	opacity:0.93;
-	filter: alpha(opacity=93);
-	transition: all 0.3s ease-in-out;
-	-webkit-transition: all 0.3s ease-in-out;
-}
-.blog_item:hover .blog_img img {
-	opacity:0.35;
-	filter: alpha(opacity=35);
-}
-
-.post_date {
-	overflow:hidden;
-	position:absolute;
-	z-index:1;
-	left:0;
-	bottom:0;
-	width:60px;
-	padding:9px 2px;
-	text-transform:uppercase;
-	text-align:center;
-	line-height:16px;
-	font-size:14px;
-	color:#505050;
-	background:#fff;
-	transition: all 0.3s ease-in-out;
-	-webkit-transition: all 0.3s ease-in-out;
-}
-.post_date span {
-	line-height:30px;
-	font-size:31px;
-	transition: all 0.3s ease-in-out;
-	-webkit-transition: all 0.3s ease-in-out;
-}
-.blog_item:hover .post_date,
-.blog_item:hover .post_date span {color:#59b390;
-}
-
-.blog_description {
-	padding:27px 0 14px;
-	background:#fff;
-}
-.blog_item a.title {
-	text-transform:uppercase;
-	font-size:18px;
-	color:#505050;
-}
-.blog_item:hover a.title {
-	color:#59b390;
-}
-
-.blog_item .blog_author {
-	padding:5px 0;
-	color:#979797;
-}
-.blog_item .blog_author a {
-	color:#979797;
-}
-.blog_item .blog_author a:hover {
-	color:#505050;
-}
-
-
-/* ___________________ //Blog ___________________ */
 
 
 /* ____________________ Contact ____________________ */
@@ -811,76 +730,13 @@ input[type="color"]:focus {
 	color: #A82300 !important;
 }
 
-.ss-foursquare:hover {
-	color: #26B3EE !important;
+.ss-instagram:hover {
+	color: #9E7056 !important;
 }
 
 
-.copyright {
-	position:absolute;
-	bottom:0;
-	left:0;
-	width:100%;
-	padding:17px 0;
-	text-align:center;
-	color:#fff;
-}
-.copyright a {color:#59b390;
-}
-.copyright a:hover {color:#fff;
-}
 
-/* ___________________ //Contact ___________________ */
-
-
-/* ____________________ Isotope Styles ____________________ */
-/*.isotope-hidden.isotope-item {
-  pointer-events: none;
-  z-index: 1;
-}*/
-
-/**** Isotope CSS3 transitions ****/
-
-/*.isotope,
-.isotope .isotope-item {
-  -webkit-transition-duration: 0.8s;
-     -moz-transition-duration: 0.8s;
-          transition-duration: 0.8s;
-}
-.isotope {
-  -webkit-transition-property: height, width;
-     -moz-transition-property: height, width;
-          transition-property: height, width;
-}
-
-.isotope .isotope-item {
-  -webkit-transition-property: -webkit-transform, opacity;
-     -moz-transition-property:    -moz-transform, opacity;
-          transition-property:         transform, opacity;
-}*/
-
-/**** disabling Isotope CSS3 transitions ****/
-
-/*.isotope.no-transition,
-.isotope.no-transition .isotope-item,
-.isotope .isotope-item.no-transition {
-  -webkit-transition-duration: 0s;
-     -moz-transition-duration: 0s;
-          transition-duration: 0s;
-}*/
-/* End: Recommended Isotope styles */
-
-/* disable CSS transitions for containers with infinite scrolling*/
-/*.isotope.infinite-scrolling {
-  -webkit-transition: none;
-     -moz-transition: none;
-          transition: none;
-}*/
-
-/* ___________________ //Isotope Styles ___________________ */
-
-
-/* ____________________ Responsive Style ____________________ */
+/*custom media queries*/
 @media (min-width: 1280px) and (max-width: 1425px) {}
 
 @media (min-width: 1001px) and (max-width: 1279px) {}
@@ -915,45 +771,20 @@ input[type="color"]:focus {
 	#home {min-height:100%;}
 	
 
-/* __________ Menu __________ */
+
 .navmenu ul li a {padding:0 30px;}
 
 	
-/* _________ //Menu _________ */
-
-/* __________ About __________ */
-
-/* _________ //About _________ */
-
-/* __________ Services __________ */
 	
-/* _________ //Services _________ */
+	.portfolio_block .element {width:49.9%;}
 
-/* __________ Testimonials __________ */
-	
-/* _________ //Testimonials _________ */
 
-/* __________ Portfolio __________ */
-	.portfolio_block .element, .portfolio_block .uc-container {width:362px;height:292px;}
-	
-	.portfolio_block .proj_descr p {font-size:13px; margin-bottom:3px;}
-	.portfolio_block .proj_descr {font-size:11px; line-height:17px;padding:7px 12px; left:7px; right:7px; bottom:7px;}
-/* _________ //Portfolio _________ */
-
-/* __________ Nam __________ */
 	#nam .nam_block {font-size:25px;line-height:25px;}
-/* _________ //Nam _________ */
 
-/* __________ Blog __________ */
-	
-/* _________ //Blog _________ */
-
-/* __________ Contact __________ */
 	#ajax-contact-form .fleft {width:230px;}
 	input[type="text"] {width:83%;}
 	textarea {width:250px;}
 	
-/* _________ //Contact _________ */
 
 	.span12 {width: 724px;}
 	.span11 {width: 662px;}
@@ -975,12 +806,10 @@ input[type="color"]:focus {
 	
 	#home {min-height:100%;}
 
-/* __________ Menu __________ */
+
 	
 	.navmenu ul li a {padding: 0 0px;}
-/* _________ //Menu _________ */
 
-/* __________ Home __________ */
 	#home .welcome_block {padding-left:0; padding-right:0;}
 	#home .welcome_block h1 {font-size:44px; line-height:44px;}
 	#home .welcome_block p {font-size:15px; line-height:15px;}
@@ -988,37 +817,21 @@ input[type="color"]:focus {
 
 	.homelink:hover {color: white !important;}
 	
-/* _________ //Home _________ */
 
-/* __________ About __________ */	
 	.about_slide .video_block, .about_slide li img {width:150px; height:150px;}
 	#about h3 {font-size:18px; line-height:20px; padding-top:10px;}
-/* _________ //About _________ */
 
-/* __________ Portfolio __________ */
 	#portfolio .fleft, #portfolio .fright {float:none;}
 	
 	#filter {text-align:center;}
 	#filter a {margin:0 7px;}
 	
-	.portfolio_block .element, .portfolio_block .uc-container {width:235px;height:190px;}
 	
-	.portfolio_block .proj_descr p {font-size:13px; margin-bottom:3px;}
-	.portfolio_block .proj_descr {font-size:11px; line-height:17px;padding:7px 12px; left:7px; right:7px; bottom:7px;}
-/* _________ //Portfolio _________ */
+	.portfolio_block .element {width:49.9%;}
 
-/* __________ Testimonials __________ */
+
 	.testimonials_block{padding:0;}
 	.testimonials_txt {font-size:13px;}
-/* _________ //Testimonials _________ */
-
-/* __________ Services __________ */
-		
-/* _________ //Services _________ */
-
-/* __________ Blog __________ */
-
-/* _________ //Blog _________ */
 
 	#resume .resume_block {padding:0;}
 	
@@ -1040,12 +853,6 @@ input[type="color"]:focus {
 @media (max-width: 479px) {	
 	.container {width:310px;}
 
-/* __________ Menu __________ */
-	
-	/*.navmenu ul li a {padding:0 4px; font-size:10px; text-align:center;}*/
-
-/* __________ About __________ */
-
 .call_to_btn {
 	display:inline-block;
 	margin:1em;
@@ -1061,27 +868,18 @@ input[type="color"]:focus {
 }
 
 	
-/* _________ //About _________ */
 
-/* __________ Portfolio __________ */
-	.portfolio_block .element, .portfolio_block .uc-container {width:155px;height:125px;}
-/* _________ //Portfolio _________ */
+	.portfolio_block .element {width:100%;}
 
-/* __________ Resume __________ */
-.resume_btn {background-color: #1abc9c;
-border: solid white 10px}
+
+	.resume_btn {background-color: #1abc9c;
+	border: solid white 10px}
 	
-/* _________ //Resume _________ */
 
-/* __________ Blog __________ */
-	
-/* _________ //Blog _________ */
 	
 	#ajax-contact-form .fleft {width:310px;}
 	
 	#contact textarea, #contact input[type="text"] {width:100%;}
-
-
 	
 	.footer {text-align:center;}
 	.footer .fleft, .footer .fright {float:none;}
@@ -1091,25 +889,5 @@ border: solid white 10px}
 
 	
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 

@@ -6,7 +6,6 @@
 	<meta name="description" content="">
 	<meta name="author" content="">
    
-  
 
 	<link href="css/prettyPhoto.css" rel="stylesheet" type="text/css" />
 	<link href="css/flexslider.css" rel="stylesheet" type="text/css" media="screen" />
@@ -43,7 +42,7 @@
 	
 <!-- 	// <script src="js/portfolio_effect.js"></script> -->
 	
-	<script src="js/jquery.isotope.min.js" type="text/javascript"></script>
+	<!-- // <script src="js/jquery.isotope.min.js" type="text/javascript"></script> -->
 	<script src="js/sorting.js" type="text/javascript"></script>
 		
 	<script src="js/jquery.nicescroll.min.js"></script>
@@ -57,20 +56,14 @@
     <!-- #page -->
     <div id="page">
 		
-		<!-- <div class="sidebar_btn"></div> -->
 		
 		<!-- header section -->
-     <section id="sidebar">
+     <section id="nav_bar">
 			<!-- Menu -->
-			<nav class="navmenu">
-				<ul>
-					<li class="active first"><a class="i1" href="#home"><span>Home</span></a></li>
-					<li><a href="#about"><span>About</span></a></li>
-					<li><a href="#portfolio"><span>Work</span></a></li>
-					<li><a href="#resume"><span>CV</span></a></li>
-					<li class="last"><a href="#contact"><span>Connect</span></a></li>
-				</ul>
-			</nav><!-- //Menu -->
+			
+				<?php 
+			  include("header.php");
+			  ?>
 
         </section><!-- //header section -->
 		
@@ -98,7 +91,7 @@
 				<div class="row abouttext">
 					<div class="col-lg-6">	
 						<!-- <h3>Aenean sagittis tortor quis nisl aliquet at rutrum nisi posuere. Ut sollicitudin congue</h3> -->
-						<p>After two years working for startups and creeping closer to the engineering table everyday, I began to teach myself to code. Less than two weeks into this programming foray, I knew becoming a builder was the right path.</p>
+						<p>After two years working for startups and creeping closer to the engineering table everyday, I began to teach myself to code. Less than two weeks into my programming foray, I knew becoming a builder was the right path.</p>
 						<p> While majoring in Linguistics and Spanish at the University of Michigan, I began to burn the midnight oil looking for ways to combine programming into my studies where I was introduced to computational linguistics and natural language processing. Wanting to really boost my backend skills, I moved to New York to attend the Flatiron School and quickly fell in love with ruby.
 						</p>
 						
@@ -164,13 +157,61 @@
 
 				<div class="clear"></div>
 
-				<div class="center">
-					<div>Syllaboss</div>
-					<div>Arduino Beetle</div>
-					<div>Voice Entity Recognizer</div>
-					<div>Shi*t-Avi-Says</div>
-				</div>
+				<div class="portfolio_block">
+					<div class="element">	
+						<div class="portfolio_item">
+							<div class="hover_img"> 
+								<img src="images/landing_pg.png" alt="" />
+							</div>
+							<div class="proj_descr">
+								<a href="javascript:void(0);" alt="">Syllaboss</a>
+								custom cms where school day schedules are curated by instructors and students can interact with one another
+							</div>
+						</div>
+					</div>
+					
+					<div class="element">	
+						<div class="portfolio_item">
+							<div class="hover_img"> 
+								<!-- <img src="images/arduino_moving.MOV" alt="" /> -->
+								<video id="myvideo" width="217" height="195" controls>
+							  	<source src="images/arduino_moving.MOV" type="video/mp4">
+									Your browser does not support the video tag.
+							</video>
+							</div>
+							<div class="proj_descr">
+								<a href="javascript:void(0);" alt="">Arduino Beetle</a>
+									first arduino robot which moves towards light and stops, walks and turns
+							</div>
+						</div>
+					</div>
 
+					<div class="element">	
+						<div class="portfolio_item">
+							<div class="hover_img"> 
+								<img src="images/svm_funct.png" alt="" />
+							</div>
+							<div class="proj_descr">
+								<a href="javascript:void(0);" alt="">Voice Entity Recognizer</a>
+								a program with an extensive feature detection system to detect the author of a text from a databse of possibilities
+							</div>
+						</div>
+					</div>
+
+
+					<div class="element">	
+						<div class="portfolio_item">
+							<div class="hover_img"> 
+								<img src="images/gem.jpg" alt="" />
+							</div>
+							<div class="proj_descr">
+								<a href="javascript:void(0);" alt="">Sh*t-Avi-Says</a>
+								a ruby gem that directly posts to tumblr and twitter from the command line
+							</div>
+						</div>
+					</div>
+				
+				</div>
 					<div class="clear"></div>
 				</div><!-- portfolio_block -->
 
@@ -200,7 +241,7 @@
 						<a href="http://www.github.com/jeneisen" class="ss-octocat"></a>
 						<a href="http://www.linkedin.com/in/jeneisenberg/" class="ss-linkedin"></a>
 						<a href="http://www.quora.com/Jen-Eisenberg" class="ss-quora"></a>
-						<a href="http://www.instagram.com/jeneisen" class="ss-foursquare"></a>
+						<a href="http://www.instagram.com/jeneisen" class="ss-instagram"></a>
 						
 					</div>
 					<!-- contact form -->
@@ -230,5 +271,9 @@
 		</section><!-- //contact content -->
 
     </div><!-- end #page -->
+
+    <footer>
+
+    </footer>
 </body>
 </html>

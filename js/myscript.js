@@ -13,19 +13,20 @@ function calculateScroll() {
 		contentTop.push( $( $(this).attr('href') ).offset().top );
 		contentBottom.push( $( $(this).attr('href') ).offset().top + $( $(this).attr('href') ).height() );
 	})
-	$.each( contentTop, function(i){
-		if ( winTop > contentTop[i] - rangeTop && winTop < contentBottom[i] - rangeBottom ){
-			$('.navmenu li')
-			.removeClass('active')
-			.eq(i).addClass('active');
-			
-			$('#top .navmenu li').first().addClass('active');
-			jQuery('.mobile_menu_wrapper').css({'display' : 'none'});
-			
-		}
-	})
+
 };
 
+	// $.each( contentTop, function(i){
+	// 	if ( winTop > contentTop[i] - rangeTop && winTop < contentBottom[i] - rangeBottom ){
+	// 		$('.navmenu li')
+	// 		.removeClass('active')
+	// 		.eq(i).addClass('active');
+			
+	// 		$('#top .navmenu li').first().addClass('active');
+	// 		jQuery('.mobile_menu_wrapper').css({'display' : 'none'});
+			
+	// 	}
+	// })
 
 jQuery(document).ready(function() {
 	//Menu Sidebar
@@ -179,5 +180,7 @@ function contactHeight(){
 	$('#contact').css('min-height', wh);
 	$('#contact .container').css('padding-top', padding_top);	
 }
+
+
 
 
