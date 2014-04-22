@@ -7,35 +7,35 @@
   <ul>
     <li 
     <?php
-      if ($pageName=="#home")
+      if ($pageName=="index.php#home")
         echo "class=\"active\""
     ?>>
     <a class="i1" href="#home"><span>Home</span></a></li>
     
     <li
     <?php
-      if ($pageName=="#about")
+      if ($pageName=="index.php#about")
         echo "class=\"active\""
     ?>
     ><a href="#about"><span>About</span></a></li>
     
     <li
     <?php
-      if ($pageName=="#portfolio")
+      if ($pageName=="index.php#portfolio")
         echo "class=\"active\""
     ?>
     ><a href="#portfolio"><span>Work</span></a></li>
     
     <li
     <?php
-      if ($pageName=="#resume")
+      if ($pageName=="index.php#resume")
         echo "class=\"active\""
     ?>
     ><a href="#resume"><span>CV</span></a></li>
     
     <li
     <?php
-      if ($pageName=="#contact")
+      if ($pageName=="index.php#contact")
         echo "class=\"active\""
     ?>
     ><a href="#contact"><span>Connect</span></a></li>

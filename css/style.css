@@ -225,8 +225,8 @@ section#nav_bar {overflow:visible;
 	transition: none;
 	-webkit-transition: none;
 }
-.navmenu li a:hover,
-.navmenu li.active 
+.navmenu ul li a:hover,
+.navmenu ul li a.active 
 {
 	color:#1abc9c;
 }
@@ -300,6 +300,8 @@ section#nav_bar {overflow:visible;
 
 .abouttext {
 	text-align: justify;
+	font-size: 15px;
+	padding-top: 2em;
 }
 
 .about_slide .slide1 h3 {width:85%;
@@ -358,48 +360,16 @@ section#nav_bar {overflow:visible;
 
 
 /*Twitter section*/
-#testimonials {
+#fav_quote {
 	position:relative;
-	padding:150px 0 116px;
-	background-image: url(../images/testimonials_bg.jpg);
-	background-size:cover;
+	padding:5em 0 5em;
+	background-color: #1abc9c;
 }
-#testimonials .container {
+#fav_quote .container {
 	position:relative;
 	z-index:1;
 }
-.testimonials_fill {
-	position:absolute;
-	z-index:0;
-	left:0;
-	top:0;
-	width:100%;
-	height:100%;
-	background:url(../images/testimonials_fill.png);
-}
 
-.testimonials_block {
-	color:#fff;
-}
-.testim_avatar {
-	width:85px;
-	height:85px;
-	margin-right:30px;
-	border-radius:50%;
-}
-.testimonials_txt {
-	padding:8px 0 15px;
-	font-size:15px;
-}
-.author_inf {
-	line-height:17px;
-}
-.author_inf span {
-	display:inline-block;
-	padding-right:4px;
-	text-transform:uppercase;
-	color:#59b390;
-}
 
 
 
@@ -410,23 +380,6 @@ section#portfolio {
 	width:100%;
 }
 
-/*.project {
-	display: inline-block;
-	padding-right: 8em;
-	text-align: center;
-	padding-left: 8em;
-}*/
-
-
-/*.element {
-	display:inline-block;
-	margin: 25px;
-	border: solid black 10px;
-	padding:12em 12em 12em;
-	line-height:20px;
-	font-size:10px;
-	cursor:pointer;
-}*/
 
 .portfolio_block .element {
 	float:left;
@@ -744,7 +697,7 @@ input[type="color"]:focus {
 @media (max-width: 1024px) {
 	.parallax_effect {background-size:cover;background-position:0 0 !important;}
 	#home {background-position:0 0 !important;}
-	#about, #contact, .contact_parallax,  #blog, #testimonials, #progress, #resume, #nam {background-position:0 0 !important; background-size:cover;}
+	#about, #contact, .contact_parallax,  #blog, #fav_quote, #progress, #resume, #nam {background-position:0 0 !important; background-size:cover;}
 	
 	.opacity { opacity: 1; filter: alpha(opacity=100);}
 	
@@ -755,7 +708,7 @@ input[type="color"]:focus {
 @media (max-width: 1024px) and (-webkit-min-device-pixel-ratio:0) {
 	.parallax_effect {background-size:cover;background-position:0 0 !important;}
 	#home {background-position:0 0 !important;}
-	#about, #contact, .contact_parallax,  #blog, #testimonials, #progress, #resume, #nam {background-position:0 0 !important; background-size:cover;}
+	#about, #contact, .contact_parallax,  #blog, #fav_quote, #progress, #resume, #nam {background-position:0 0 !important; background-size:cover;}
 	
 	.opacity { opacity: 1; filter: alpha(opacity=100);}
 	
@@ -830,8 +783,7 @@ input[type="color"]:focus {
 	.portfolio_block .element {width:49.9%;}
 
 
-	.testimonials_block{padding:0;}
-	.testimonials_txt {font-size:13px;}
+
 
 	#resume .resume_block {padding:0;}
 	

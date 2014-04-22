@@ -12,7 +12,8 @@ include 'email_validation.php';
 
 $name = stripslashes($_POST['name']);
 $email = trim($_POST['email']);
-$subject = stripslashes($_POST['subject']);
+// $subject = stripslashes($_POST['subject']);
+$subject = "[Inquiry] Hey Jen!";
 $message = stripslashes($_POST['message']);
 
 

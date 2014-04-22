@@ -43,7 +43,7 @@
 <!-- 	// <script src="js/portfolio_effect.js"></script> -->
 	
 	<!-- // <script src="js/jquery.isotope.min.js" type="text/javascript"></script> -->
-	<script src="js/sorting.js" type="text/javascript"></script>
+	
 		
 	<script src="js/jquery.nicescroll.min.js"></script>
 	
@@ -60,10 +60,15 @@
 		<!-- header section -->
      <section id="nav_bar">
 			<!-- Menu -->
-			
-				<?php 
-			  include("header.php");
-			  ?>
+			<nav class="navmenu">
+				<ul>
+					<li><a href="#home"><span>Home</span></a></li>
+					<li><a href="#about"><span>About</span></a></li>
+					<li><a href="#portfolio"><span>Work</span></a></li>
+					<li><a href="#resume"><span>CV</span></a></li>
+					<li><a href="#contact"><span>Connect</span></a></li>
+				</ul>
+			</nav><!-- //Menu -->	
 
         </section><!-- //header section -->
 		
@@ -112,41 +117,14 @@
         </section><!-- //about content-->
       
     
-		<!-- Testimonials content -->
-		<section id="testimonials" data-stellar-background-ratio="0.5">
+		<!-- fav_quote content -->
+		<section id="fav_quote" data-stellar-background-ratio="0.5">
             <!-- section header -->
 			<div class="container">
-				<div class="flexslider testimonials_block">
-					<ul class="slides">
-						<li class="slide1">
-							<div class="testim_item">
-								<img class="fleft testim_avatar" src="images/avatar1.jpg" alt="" />
-								<div class="testimonials_txt">“ Integer sit amet enim mollis, varius urna ut, sollicitudin arcu. Vestibulum vehicula justo sit amet dignissim malesuada. Praesent ullamcorper euismod metus, venenatis mollis eros semper non. Curabitur nulla elit, hendrerit ut diam non, malesuadalacinia mi.”</div>
-								<div class="author_inf"><span>Tom Doe</span>, lorem ipsum</div>
-								<div class="clear"></div>
-							</div>
-						</li>
-						<li class="slide2">
-							<div class="testim_item">
-								<img class="fleft testim_avatar" src="images/avatar2.jpg" alt="" />
-								<div class="testimonials_txt">“ Integer sit amet enim mollis, varius urna ut, sollicitudin arcu. Vestibulum vehicula justo sit amet dignissim malesuada. Praesent ullamcorper euismod metus, venenatis mollis eros semper non. Curabitur nulla elit, hendrerit ut diam non, malesuadalacinia mi.”</div>
-								<div class="author_inf"><span>Tom Doe</span>, lorem ipsum</div>
-								<div class="clear"></div>
-							</div>
-						</li>
-						<li class="slide3">
-							<div class="testim_item">
-								<img class="fleft testim_avatar" src="images/avatar3.jpg" alt="" />
-								<div class="testimonials_txt">“ Integer sit amet enim mollis, varius urna ut, sollicitudin arcu. Vestibulum vehicula justo sit amet dignissim malesuada. Praesent ullamcorper euismod metus, venenatis mollis eros semper non. Curabitur nulla elit, hendrerit ut diam non, malesuadalacinia mi.”</div>
-								<div class="author_inf"><span>Jane Doe</span>, lorem ipsum</div>
-								<div class="clear"></div>
-							</div>
-						</li>
-					</ul>
-				</div>
-			</div><!-- end .container -->
-			<div class="testimonials_fill"></div><!-- //section header -->
-		</section><!-- //Testimonials content -->
+				<h3>“when you don't create things, you become defined by your tastes rather than ability. your tastes only narrow & exclude people. so create.”</h3>
+				<h4>― Why The Lucky Stiff</h4>
+			</div>
+		</section><!-- //fav_quote content -->
 		
 		<!-- portfolio header-->
 		<section id="portfolio" class="page_section">
@@ -189,7 +167,7 @@
 					<div class="element">	
 						<div class="portfolio_item">
 							<div class="hover_img"> 
-								<img src="images/svm_funct.png" alt="" />
+								<img src="images/svm.png" alt="" />
 							</div>
 							<div class="proj_descr">
 								<a href="javascript:void(0);" alt="">Voice Entity Recognizer</a>
@@ -202,7 +180,7 @@
 					<div class="element">	
 						<div class="portfolio_item">
 							<div class="hover_img"> 
-								<img src="images/gem.jpg" alt="" />
+								<img src="images/ruby_gem.png" alt="" />
 							</div>
 							<div class="proj_descr">
 								<a href="javascript:void(0);" alt="">Sh*t-Avi-Says</a>
